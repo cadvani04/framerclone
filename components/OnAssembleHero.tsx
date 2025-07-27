@@ -116,7 +116,7 @@ const OnAssembleHero = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-sm text-gray-500"
         >
-          Helped 50+ agents scale • 300% more leads • 20 hours saved per week
+          Helped 18+ agents scale • 300% more leads • 20 hours saved per week
         </motion.div>
       </div>
     </section>
