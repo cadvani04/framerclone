@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import Script from 'next/script'
 
 const CTA = () => {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -45,30 +46,14 @@ const CTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex justify-center gap-8 mb-12"
+            className="mb-12"
           >
-            <motion.button
-              whileHover={{ 
-                scale: 1.1, 
-                boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
-                y: -5
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-16 py-6 rounded-2xl transition-all duration-300 text-2xl shadow-xl flex items-center"
-            >
-              🚀 Book a call
-            </motion.button>
-            <motion.button
-              whileHover={{ 
-                scale: 1.1, 
-                boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
-                y: -5
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold px-16 py-6 rounded-2xl transition-all duration-300 text-2xl flex items-center"
-            >
-              📞 Get quote
-            </motion.button>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              🎯 30-minute strategy session
+            </h3>
+            <p className="text-xl text-gray-600 mb-8">
+              💰 Free • No commitment • Real results
+            </p>
           </motion.div>
 
           <motion.div
@@ -76,17 +61,53 @@ const CTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
-            className="space-y-4"
+            className="bg-gray-50 rounded-2xl p-8 shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-gray-900">
-              🎯 30-minute strategy session
-            </h3>
-            <p className="text-xl text-gray-600">
-              💰 Free • No commitment • Real results
-            </p>
+            <div style={{width:"100%",height:"600px",overflow:"scroll"}} id="my-cal-inline-30min"></div>
           </motion.div>
         </motion.div>
       </div>
+
+      <Script id="cal-embed" strategy="afterInteractive">
+        {`
+          (function (C, A, L) { 
+            let p = function (a, ar) { a.q.push(ar); }; 
+            let d = C.document; 
+            C.Cal = C.Cal || function () { 
+              let cal = C.Cal; 
+              let ar = arguments; 
+              if (!cal.loaded) { 
+                cal.ns = {}; 
+                cal.q = cal.q || []; 
+                d.head.appendChild(d.createElement("script")).src = A; 
+                cal.loaded = true; 
+              } 
+              if (ar[0] === L) { 
+                const api = function () { p(api, arguments); }; 
+                const namespace = ar[1]; 
+                api.q = api.q || []; 
+                if(typeof namespace === "string"){
+                  cal.ns[namespace] = cal.ns[namespace] || api;
+                  p(cal.ns[namespace], ar);
+                  p(cal, ["initNamespace", namespace]);
+                } else p(cal, ar); 
+                return;
+              } 
+              p(cal, ar); 
+            }; 
+          })(window, "https://app.cal.com/embed/embed.js", "init");
+          
+          Cal("init", "30min", {origin:"https://app.cal.com"});
+
+          Cal.ns["30min"]("inline", {
+            elementOrSelector:"#my-cal-inline-30min",
+            config: {"layout":"month_view"},
+            calLink: "xvanitee/30min",
+          });
+
+          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        `}
+      </Script>
     </section>
   )
 }
