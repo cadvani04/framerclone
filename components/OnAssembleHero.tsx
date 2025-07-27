@@ -54,7 +54,7 @@ const OnAssembleHero = () => {
             transition={{ duration: 1 }}
             className="text-sm text-gray-600 mb-8 font-medium"
           >
-            🚀 REAL ESTATE AUTOMATION EXPERT ✦
+            🚀 FUNNEL AUTOMATION EXPERT ✦
           </motion.div>
           
           <motion.h1
@@ -106,7 +106,7 @@ const OnAssembleHero = () => {
             className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold px-12 py-4 rounded-lg transition-all duration-300 text-lg flex items-center"
           >
             <Play className="mr-2 h-5 w-5" />
-            Watch demo
+            My Story
           </motion.a>
         </motion.div>
 
