@@ -17,13 +17,13 @@ const FeatureSection = () => {
 
   const features = [
     {
-      title: "Here's what I've built and achieved.",
-      subtitle: "From AI research to real business automation - here's my journey and expertise.",
+      title: "Here's what I've built for real estate agents.",
+      subtitle: "Real systems. Real results. No fluff.",
       items: [
-        { title: "🧠 AI Research & Development", desc: "GPT prompt engineering, keyword classification, and NLP research at UC Santa Cruz", icon: Brain, cta: "Learn More" },
-        { title: "🏠 Real Estate Automation", desc: "Built lead capture and follow-up systems for Coldwell Banker agents", icon: Users, cta: "See Project" },
-        { title: "⚡ Business Process Automation", desc: "Designed workflows using n8n, Zapier, and custom integrations", icon: Zap, cta: "See Project" },
-        { title: "🎯 Product-Focused Approach", desc: "Information Science background with hands-on business automation experience", icon: Code, cta: "Learn More" }
+        { title: "🏠 Lead Capture Automation", desc: "Built systems that capture 300% more leads for Coldwell Banker agents", icon: Users, cta: "See Results" },
+        { title: "⚡ Follow-up Sequences", desc: "Automated follow-ups that close 40% more deals", icon: Zap, cta: "See Results" },
+        { title: "🤖 AI Lead Qualification", desc: "GPT-powered systems that qualify leads 24/7", icon: Brain, cta: "See Results" },
+        { title: "📊 CRM Integration", desc: "Seamless Follow Up Boss and Monday.com automation", icon: Code, cta: "See Results" }
       ]
     }
   ]

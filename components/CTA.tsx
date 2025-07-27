@@ -37,7 +37,7 @@ const CTA = () => {
             viewport={{ once: true }}
             className="text-6xl md:text-8xl font-bold text-gray-900 mb-12"
           >
-            Let's work together
+            Ready to scale?
           </motion.h2>
 
           <motion.div
@@ -56,7 +56,7 @@ const CTA = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-16 py-6 rounded-2xl transition-all duration-300 text-2xl shadow-xl flex items-center"
             >
-              🚀 Get in touch
+              🚀 Book a call
             </motion.button>
             <motion.button
               whileHover={{ 
@@ -67,7 +67,7 @@ const CTA = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold px-16 py-6 rounded-2xl transition-all duration-300 text-2xl flex items-center"
             >
-              📞 Schedule a call
+              📞 Get quote
             </motion.button>
           </motion.div>
 
@@ -79,10 +79,10 @@ const CTA = () => {
             className="space-y-4"
           >
             <h3 className="text-2xl font-bold text-gray-900">
-              🎯 Available for new projects
+              🎯 30-minute strategy session
             </h3>
             <p className="text-xl text-gray-600">
-              💼 Consulting • Implementation • Training
+              💰 Free • No commitment • Real results
             </p>
           </motion.div>
         </motion.div>

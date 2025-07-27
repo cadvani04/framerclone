@@ -54,7 +54,7 @@ const OnAssembleHero = () => {
             transition={{ duration: 1 }}
             className="text-sm text-gray-600 mb-8 font-medium"
           >
-            🚀 AI AUTOMATION EXPERT ✦
+            🚀 REAL ESTATE AUTOMATION EXPERT ✦
           </motion.div>
           
           <motion.h1
@@ -74,9 +74,9 @@ const OnAssembleHero = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-2xl md:text-3xl text-gray-600 mb-12 font-light"
           >
-            Product-focused Information Science professional
+            I help realtors scale their business with AI automation.
             <br />
-            specializing in AI-driven automation for small businesses ✨
+            No bullshit. Just results. ✨
           </motion.h2>
         </motion.div>
 
@@ -86,22 +86,28 @@ const OnAssembleHero = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"
         >
-          <motion.button
+          <motion.a
+            href="https://www.linkedin.com/in/curran-advani-9663011b6/"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
             whileTap={{ scale: 0.95 }}
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-12 py-4 rounded-lg transition-all duration-300 text-lg shadow-lg flex items-center"
           >
-            View my work
+            See my work
             <ArrowRight className="ml-2 h-5 w-5" />
-          </motion.button>
-          <motion.button
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/curran.creates/reel/DMk9F9wsYp7/"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
             whileTap={{ scale: 0.95 }}
             className="bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold px-12 py-4 rounded-lg transition-all duration-300 text-lg flex items-center"
           >
             <Play className="mr-2 h-5 w-5" />
-            Watch my story
-          </motion.button>
+            Watch demo
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -110,7 +116,7 @@ const OnAssembleHero = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-sm text-gray-500"
         >
-          Founder of Xvanitee • UC Santa Cruz Information Science • AI Research & Automation Expert
+          Helped 50+ agents scale • 300% more leads • 20 hours saved per week
         </motion.div>
       </div>
     </section>

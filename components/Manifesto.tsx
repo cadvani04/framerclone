@@ -15,9 +15,9 @@ const Manifesto = () => {
   const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1])
 
   const words = [
-    "I", "believe", "automation", "should", "solve", "human", "problems", "not", "create", "new", "ones",
-    "That's", "why", "I", "focus", "on", "learning", "your", "business", "first", "then", "building", "systems", "that", "actually", "work",
-    "No", "buzzwords", "no", "complexity", "just", "results", "that", "make", "sense"
+    "Most", "realtors", "waste", "time", "on", "manual", "tasks", "that", "should", "be", "automated",
+    "I", "build", "systems", "that", "capture", "leads", "follow", "up", "and", "close", "deals", "automatically",
+    "You", "focus", "on", "clients", "I", "handle", "the", "rest"
   ]
 
   return (
@@ -44,7 +44,7 @@ const Manifesto = () => {
             viewport={{ once: true }}
             className="text-5xl md:text-7xl font-bold text-gray-900 mb-8"
           >
-            💭 My Philosophy
+            💭 My Approach
           </motion.h2>
         </motion.div>
 
