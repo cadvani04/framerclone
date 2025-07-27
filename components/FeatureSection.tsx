@@ -20,7 +20,7 @@ const FeatureSection = () => {
       title: "Here's what I've built for real estate agents.",
       subtitle: "Real systems. Real results. No fluff.",
       items: [
-        { title: "🏠 Lead Capture Automation", desc: "Built systems that capture 300% more leads for Coldwell Banker agents", icon: Users, cta: "See Results" },
+        { title: "🏠 Lead Capture Automation", desc: "Built systems that capture 300% more leads for CLC Realty agents", icon: Users, cta: "See Results" },
         { title: "⚡ Follow-up Sequences", desc: "Automated follow-ups that close 40% more deals", icon: Zap, cta: "See Results" },
         { title: "🤖 AI Lead Qualification", desc: "GPT-powered systems that qualify leads 24/7", icon: Brain, cta: "See Results" },
         { title: "📊 CRM Integration", desc: "Seamless Follow Up Boss and Monday.com automation", icon: Code, cta: "See Results" }
