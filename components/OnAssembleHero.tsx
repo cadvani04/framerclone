@@ -74,7 +74,7 @@ const OnAssembleHero = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-2xl md:text-3xl text-gray-600 mb-12 font-light"
           >
-            I help realtors scale their business with AI automation.
+            I help business owners scale their business with AI automation.
             <br />
             No bullshit. Just results. ✨
           </motion.h2>

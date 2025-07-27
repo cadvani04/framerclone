@@ -52,7 +52,7 @@ const Hero = () => {
           </button>
           <button className="button-secondary text-lg px-8 py-4 flex items-center">
             <Play className="mr-2 h-5 w-5" />
-            Watch demo
+            Watch my story
           </button>
         </motion.div>
 
